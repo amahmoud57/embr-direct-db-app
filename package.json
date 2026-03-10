@@ -1,0 +1,14 @@
+{
+  "name": "embr-direct-db-app",
+  "version": "1.0.0",
+  "description": "Production app using direct database connection via Embr",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "pg": "^8.13.0"
+  }
+}
