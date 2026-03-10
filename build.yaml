@@ -8,4 +8,6 @@ run:
 database:
   enabled: true
   engine: postgres
+  mode: direct
+  sourceConnectionUrl: "postgresql://embrtest:EmbrTestPass99@embr-test-pgserver.postgres.database.azure.com:5432/production_orders?sslmode=require"
   connection: production
