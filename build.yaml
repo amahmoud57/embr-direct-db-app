@@ -8,6 +8,6 @@ run:
 database:
   enabled: true
   engine: postgres
-  mode: direct
-  sourceConnectionUrl: "postgresql://embrtest:EmbrTestPass99@embr-test-pgserver.postgres.database.azure.com:5432/production_orders?sslmode=require"
-  connection: production
+  # Mode (clone/direct/internal) is now set per environment via Portal/CLI
+  # Connection URL is stored securely in Portal, not in build.yaml
+  # connection: production  # Optional - only needed if multiple external DBs exist
