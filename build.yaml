@@ -8,6 +8,6 @@ run:
 database:
   enabled: true
   engine: postgres
-  # Mode (clone/direct/internal) is now set per environment via Portal/CLI
-  # Connection URL is stored securely in Portal, not in build.yaml
-  # connection: production  # Optional - only needed if multiple external DBs exist
+  framework: raw
+  schema: db/schema.sql
+  seed: node seed.js
